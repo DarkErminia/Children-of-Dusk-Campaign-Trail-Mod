@@ -19501,6 +19501,7 @@ var havana_war = 0;
 var united_party = 0;
 var lost_running_mate = 0;
 var defect_to_china = 0;
+var conservative_unity = 0;
 
 campaignTrail_temp.player_answers = [];
 
@@ -19844,13 +19845,13 @@ cyoAdventure = function(a) {
 	if (progressivism>0){
 		campaignTrail_temp.questions_json[19] = tunnel(44186)
 	}
-	else if (progressivism<=-2 && populism<2 && militarism<2){
+	else if (progressivism>-2 && populism<2 && militarism<2){
 		campaignTrail_temp.questions_json[19] = tunnel(44190)
 	}
 	else if (progressivism<=-2 && gay==1 && populism<2 && militarism<2){
 		campaignTrail_temp.questions_json[19] = tunnel(44202)
 	}
-	else if (progressivism<=-2 && gay==1 && populism<2 && militarism<2){
+	else if (progressivism<=-2 && gay==0 && populism<2 && militarism<2){
 		campaignTrail_temp.questions_json[19] = tunnel(44228)
 	}
 	else if (progressivism>-2 && (populism<2 || militarism>=2)){
